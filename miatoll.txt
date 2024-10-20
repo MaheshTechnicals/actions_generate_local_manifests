@@ -1,4 +1,7 @@
 repo init -u https://github.com/alphadroid-project/manifest -b alpha-14 --git-lfs
+rm -rf frameworks/native
+rm -rf hardware/xiaomi
+rm -rf hardware/sony/timekeep
 git clone https://github.com/MaheshTechnicals/device_xiaomi_miatoll-ev -b alpha device/xiaomi/miatoll
 git clone https://github.com/clarencekopitiam/kernel_xiaomi_sm6250.git -b "15" kernel/xiaomi/sm6250
 git clone https://github.com/clarencekopitiam/vendor_xiaomi_miatoll.git -b lineage-21.0 vendor/xiaomi/miatoll
@@ -6,3 +9,4 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-21
 git clone https://github.com/LineageOS/android_hardware_sony_timekeep.git -b lineage-21 hardware/sony/timekeep
 git clone https://github.com/clarencelol/vendor_xiaomi_miuicamera.git -b main vendor/xiaomi/miuicamera
 git clone https://github.com/MaheshTechnicals/vendor_lineage-priv.git -b alpha vendor/lineage-priv/keys
+git clone -b alpha-14 https://github.com/MaheshTechnicals/frameworks_native-alpha.git frameworks/native --depth=1
